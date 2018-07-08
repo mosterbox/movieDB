@@ -11,7 +11,18 @@
 
 export default {
   name: 'MovieItem',
-  props: ['title', 'posterPath']
+  props: {
+      title: String,
+      posterPath: String
+  }
 }
 
 </script>
+
+<style lang="scss">
+    .movie_item {
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+    }
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="films">
+  <div class="serials">
     <MovieItem v-for="movieItem in movieList"
       :posterPath="movieItem.poster"
       :title="movieItem.title"
@@ -14,7 +14,7 @@ import MovieItem from '@/components/MovieItem.vue'
 
 import axios from 'axios'
 
-const URL = 'https://api.themoviedb.org/3/movie/popular';
+const URL = 'https://api.themoviedb.org/3/tv/popular';
 const URL_IMG = 'https://image.tmdb.org/t/p/w185';
 const API = 'api_key=ceec93d778f59df4556ed45a60299413';
 
@@ -39,7 +39,7 @@ export default {
                 function(movieItem) {
                   let newMovieList = {};
                     newMovieList.poster = `${ URL_IMG }${ movieItem.poster_path }`;
-                    newMovieList.title = movieItem.title;
+                    newMovieList.title = movieItem.name;
                     return newMovieList;
                 }
             )
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .films{
+  .serials{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Films from './views/Films.vue'
-import About from './views/About.vue'
+import Serials from './views/Serials.vue'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: Films
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/serials',
+      name: 'serials',
+      component: Serials
     }
   ]
 })
