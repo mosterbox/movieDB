@@ -1,9 +1,9 @@
 <template lang="html">
     <div class="movie_item">
         <div class="movie_img">
-            <img :src="posterPath" :alt="title">
+            <img :src="posterPath">
+            <h3 class="img_title">{{ title }}</h3>
         </div>
-        <h3>{{ title }}</h3>
     </div>
 </template>
 
@@ -22,7 +22,10 @@ export default {
 <style lang="scss">
     .movie_item {
         display: flex;
+        justify-content: flex-end;
+    }
+    .movie_img {
+        display: flex;
         flex-direction: column;
-        max-width: 25%;
     }
 </style>

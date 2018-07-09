@@ -15,7 +15,7 @@ import MovieItem from '@/components/MovieItem.vue'
 import axios from 'axios'
 
 const URL = 'https://api.themoviedb.org/3/movie/popular';
-const URL_IMG = 'https://image.tmdb.org/t/p/w185';
+const URL_IMG = 'https://image.tmdb.org/t/p/w342';
 const API = 'api_key=ceec93d778f59df4556ed45a60299413';
 
 export default {
@@ -56,8 +56,6 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    justify-content: space-around;
   }
 </style>
