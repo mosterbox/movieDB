@@ -25,7 +25,6 @@ export default {
         justify-content: flex-end;
     }
     .movie_img {
-        display: flex;
-        flex-direction: column;
+        
     }
 </style>

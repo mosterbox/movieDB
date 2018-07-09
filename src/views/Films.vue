@@ -15,7 +15,7 @@ import MovieItem from '@/components/MovieItem.vue'
 import axios from 'axios'
 
 const URL = 'https://api.themoviedb.org/3/movie/popular';
-const URL_IMG = 'https://image.tmdb.org/t/p/w342';
+const URL_IMG = 'https://image.tmdb.org/t/p/w500';
 const API = 'api_key=ceec93d778f59df4556ed45a60299413';
 
 export default {

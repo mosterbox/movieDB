@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <div id="nav">
       <router-link to="/">Films</router-link> |
       <router-link to="/serials">Serials</router-link>
@@ -7,6 +8,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import Header from '@/components/Header.vue'
+export default {
+  name: 'app',
+  components: {Header}
+}
+</script>
+
 
 <style lang="scss">
 #app {
@@ -25,5 +35,9 @@
       color: #42b983;
     }
   }
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>
